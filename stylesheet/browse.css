@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+ul {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: -150px;
+		padding: 0;
+		width: 600px;
+		height: 150px;
+}
+
+ul li{
+		list-style: none;
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		background: #000;
+		transform: rotate(45deg);
+		transition: .5s;
+		overflow: hidden;
+	
+}
+
+ul li.man {
+		top: 0;
+		left: 0;
+}
+
+ul li.woman {
+		top: 0;
+		left: 50%;
+}
+ul li.intersex {
+		bottom: -50px;
+		left: 100%;
+}
+
+ul li .bg {
+		width: 100%;
+		height: 100%;
+}
+
+ul li.woman .bg {
+		background-image: url("images/woman.png");
+		background-size: cover;
+}
+
+ul li.man .bg {
+		background-image: url("images/man.png");
+		background-size: cover;
+}
